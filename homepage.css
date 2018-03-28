@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "MidnightConstellations";
+	src: url(Site 1\font\MidnightConstellations.tff) format('truetype');
+}
+
+@font-face {
+	font-family: "JMH Euryale";
+	src: url(Site 1\font\JMH Euryale.tff) format('truetype');
+}
+
+@font-face {
+	font-family: "2 Prong Tree";
+	src: url(Site 1\font\2PROT__.tff) format('truetype');
+}
+
+html { 
+	background: url("./bg/edit c1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 200;
+}
+
+.container{
+	-webkit-display: flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.grid {
+	width: 1290px;
+	height: 1860px;
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 1fr repeat(10, 2fr) 1fr;
+	text-align: center;
+}
+
+.navbar {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 4;	
+	height: 60px;
+	width: 1290px;
+	position: fixed;
+	background-image: url("./gradients/gradient nav.jpg");
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-family: 'PT Sans Narrow', 'Trebuchet MS', sans-serif;
+	font-size: 40px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.navbar li {
+	display: inline-block;
+	margin-left: 3%; 
+	margin-right: 3%;
+}
+
+.logo{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	height: 150px;
+	margin-top: 50px;
+}
+
+.logo img {
+    border-radius: 100%;
+    border: none;
+    height: 150px;
+}
+
+
+.heading {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 4;
+    height: 60%;
+    width: 1500px;
+    min-width: 1000px;
+    margin-top: 75px;
+}
+
+.heading h1 {
+	font-size: 100px;
+	font-family: '2 Prong Tree', sans-serif;
+	text-align: left;
+	color: white;
+}
+
+.a {
+	grid-row-start: 3;
+	grid-row-end: 11;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 10px;	
+	background-color: rgb(3, 6, 25);
+}
+
+.b {
+	grid-row-start: 3;
+	grid-row-end: 8;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+	background-image: url("./gradients/gradient 1.jpg");
+	margin: 0 10px 0 10px;
+}
+
+.c {
+	grid-row-start: 3;
+	grid-row-end: 8;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+	background-image: url("./gradients/gradient 2.jpg");
+	margin: 0 10px 0 0;
+}
+
+.a,
+.b,
+.c {
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.b,
+.c {height: 90%;
+}
+
+.a p {
+	font-size: 22px;
+	text-align: left;
+	padding: 10px 15px 0px 15px;
+	color: rgb(102, 160, 242);
+}
+
+.b h3, 
+.c h3 {
+	color: rgb(102, 160, 242);
+}
+
+.b img,
+.c img {
+    max-width: 90%;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 5px 0px 5px;
+}
+
+.d {
+	grid-row-start: 8;
+	grid-row-end: 11;
+	grid-column-start: 2;
+	grid-column-end: 4;	
+	padding: 0;
+}
+
+.footer {
+	grid-row-start: 11;
+	grid-row-end: 13;
+	grid-column-start: 1;
+	grid-column-end: 4;	
+	height: 150px;
+	position: relative;
+	top: 60px;
+	padding-left: 70%;
+	}
+
+.footer img {
+	width: 60px;
+    height: 60px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(47, 78, 154);
+    display: inline-block;
+    border-radius: 25%;
+}
+
+.images{
+	margin: 0px auto;
+}
+
+
+.text{
+	margin: 20px auto;
+	width: 300px;
+}
+
+.text p {
+	font-size: 150%;
+	text-align: center;
+	font-family: '2 Prong Tree', sans-serif;
+	padding-left: 0;
+	color: white;
+}

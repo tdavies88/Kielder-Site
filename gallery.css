@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "MidnightConstellations";
+	src: url(Site 1\font\MidnightConstellations.tff) format('truetype');
+}
+
+@font-face {
+	font-family: "2 Prong Tree";
+	src: url(Site 1\font\2PROT__.tff) format('truetype');
+}
+
+html { 
+	background: url("./bg/edit c1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 200;
+	color: white;
+}
+
+.container{
+	-webkit-display: flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.grid {
+	width: 1290px;
+	height: 3200px;
+	background-size: 100%;
+	display: grid;
+	grid-template-columns: repeat (3, 1fr)
+	grid-template-rows: 1fr 1fr 1fr repeat(6, 2fr) 1fr;
+	grid-gap: 5px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.navbar {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 4;	
+	height: 60px;
+	width: 1290px;
+	position: fixed;
+	background-image: url("./gradients/gradient nav.jpg");
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-family: 'PT Sans Narrow', 'Trebuchet MS', sans-serif;
+	font-size: 40px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.navbar li {
+	display: inline-block;
+	margin-left: 3%; 
+	margin-right: 3%;
+}
+
+.heading {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: left;
+	margin-left: 250px;
+	margin-top: 145px;
+	height: 45%;
+}
+
+.heading h1 {
+	font-size: 100px;
+	font-family: '2 Prong Tree', sans-serif;
+	}
+
+.logo {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-top: 125px;	
+	margin-right: 200px;
+	height: 150px;
+}
+
+.logo img {
+    border-radius: 100%;
+    border: none;
+    height: 150px;
+}
+
+.intro {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;	
+	text-align: left;
+	margin-left: 250px;
+	height: 65%;
+}
+
+.intro p {
+	font-size: 20.5px;
+	padding: 7px;
+	color: rgb(102, 160, 242);
+}
+
+.cola {
+	grid-row-start: 4;
+	grid-row-end: 10;
+	grid-column-start: 1;
+	grid-column-end: 2;	
+}
+
+.colb {
+	grid-row-start: 4;
+	grid-row-end: 10;
+	grid-column-start: 2;
+	grid-column-end: 3;		
+}
+
+.colc {
+	grid-row-start: 4;
+	grid-row-end: 10;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+
+.cola img,
+.colb img,
+.colc img {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 350px;
+	height: 350px;
+	max-height: 350px; 
+}
+
+.footer {
+	grid-row-start: 11;
+	grid-row-end: 13;
+	grid-column-start: 1;
+	grid-column-end: 4;	
+	height: 150px;
+	padding-left: 70%;
+	position: relative;
+	bottom: 30px;
+}
+
+.footer img {
+	width: 60px;
+    height: 60px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(47, 78, 154);
+    display: inline-block;
+    border-radius: 25%;
+}
+
+.images{
+	margin: 0px auto;
+}
+
+
+.text{
+	margin: 20px auto;
+	width: 300px;
+}
+
+.text p {
+	font-size: 150%;
+	text-align: center;
+	font-family: '2 Prong Tree', sans-serif;
+	padding-left: 0;
